@@ -1,7 +1,6 @@
 {
-  "description" : "php lib",
+  "description" : "php lib for nomad website templating solution",
   "name": "nomadit/nomad",
-  "__version" : "derived from git repo",
   "autoload": {
     "psr-4": { "": "src/" }
   },
