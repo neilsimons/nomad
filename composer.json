@@ -1,11 +1,11 @@
 {
   "description" : "php lib",
   "name": "nomadit/nomad",
-  "_version" : "derived from git repo",
+  "__version" : "derived from git repo",
   "autoload": {
     "psr-4": { "": "src/" }
   },
-  "_require-dev": { "" : "too many deps - using phar method instead",
+  "__require-dev": { "" : "too many deps - using phar method instead",
     "phpunit/phpunit": "^5"
   }
 }
