@@ -21,19 +21,32 @@ trait nomad_composerFunctions
     public static function composerPostPackageInstall(PackageEvent $event)
     {
         self::parseComposerInstallerPackageEvent($event, $name, $dir,$vendordir, $projectdir);
-        // would filter to compatible packages here!
-        if(strpos($name,'nomadit/')===false){ echo "incompatible\n"; return; }
-        echo "installed $name '$dir' $projectdir\n";
+        $siterootdir = dirname($projectdir);
+        #echo "installed $name '$dir' $projectdir\n";
+        if($name==='nomadit/nomad'){
+            // nomad install - prepare various required dirs for theme install
+            #mkdir("$siterootdir/includes/themes");
+            mkdir("$siterootdir/assets");
+        }
+        if(strpos($name,'nomadit/nomad-theme-')===0){
+            // theme install - copy files into place
+            self::copyRecursive("$dir/assets", "$siterootdir/assets", 1);
+            self::copyRecursive("$dir/includes", "$siterootdir/includes", 1);
+        }
     }
 
 
     public static function composerPostPackageUpdate(PackageEvent $event)
     {
         self::parseComposerInstallerPackageEvent($event, $name, $dir,$vendordir, $projectdir);
-        // would filter to compatible packages here!
-        if(strpos($name,'nomadit/')===false){ echo "incompatible\n"; return; }
-        echo "updated $name '$dir' $projectdir\n";
+        $siterootdir = dirname($projectdir);
         // can autoload previously installed packages from here (update) #$autoloader = include "$vendordir/autoload.php";
+        #echo "updated $name '$dir' $projectdir\n";
+        if(strpos($name,'nomadit/nomad-theme-')===0){
+            // theme update - copy files into place
+            self::copyRecursive("$dir/assets", "$siterootdir/assets", 1);
+            self::copyRecursive("$dir/includes", "$siterootdir/includes", 1);
+        }
     }
 
 
