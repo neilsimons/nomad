@@ -1,7 +1,7 @@
 {
   "description" : "php lib",
   "name": "nomadit/nomad",
-  "version" : "derived from git repo",
+  "_version" : "derived from git repo",
   "autoload": {
     "psr-4": { "": "src/" }
   },
