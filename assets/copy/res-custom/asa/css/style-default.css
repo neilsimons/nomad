@@ -1,0 +1,195 @@
+body{
+    background: #f2f1e4;
+    color: #3c3c3a !important;
+}
+#footer{
+    background: #dad9cc linear-gradient(#dad9cc,#f2f1e4);
+    padding: 20px;
+}
+
+.well {
+    /*border: 1px solid #e3e3e3;
+    border-radius: 4px;*/
+    /*background: #ffffff linear-gradient(#fefde5,#fff);*/
+    background: #fff;
+    border-radius: 5px;
+    border: 2px solid #e2e1c9;
+    color:#333;
+}
+.well blockquote {
+    border-color: #ddd;
+    border-color: rgba(0, 0, 0, 0.15);
+}
+.well-lg {
+    padding: 24px;
+    border-radius: 6px;
+}
+.well-sm {
+    padding: 9px;
+    border-radius: 3px;
+}
+
+.email {
+    color: #006a8e;
+
+}
+
+
+.red {
+    color: #f33;
+}
+#middle-and-footer a{
+    color: #006a8e;
+}
+#middle-and-footer a:hover{
+    color: #00a0e0;
+}
+
+
+nav.navbar {
+    background: #458a72;
+    border: none;
+}
+#navbar ul.dropdown-menu {
+    border:none;
+}
+#navbar>ul > li > a{
+    color: #fff;
+}
+#navbar>ul > li > a.active{
+    color: #e6e3ff;
+}
+
+#navbar>ul > li > a:focus,
+#navbar>ul > li > a:hover,
+#navbar>ul > li > a:active {
+    background: #3d7c63;
+    color: #fff;
+}
+#navbar ul ul a {
+    background: #3d7c63;
+    color: #000;
+}
+#navbar ul ul a:focus,
+#navbar ul ul a:hover,
+#navbar ul ul a:active {
+    background: #458a72;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+/* nav  */
+
+/* base colours */
+#nav a { color: #fff; }
+#nav ul{ background: #3d6654; }
+/* THE active link */
+#nav ul li > a.active{          background: #458a72; }
+#nav ul li > a.active:hover{    background: #3a816a; }
+/* contains active link */
+#nav li.active{  background: #325b49; }
+/* focus & hover & li.in */
+#nav li a:focus{ background: #325b49; }
+#nav li a:hover{ background: #325b49; }
+#nav li.in     { background: #325b49; }
+/* in horizontal mode, make sub uls darker (looks like tabs: more intuitive) */
+@media (min-width: 1101px){
+    #nav ul ul {  background: #325b49; }
+    #nav ul ul li.active{  background: #264f3e; }
+    #nav ul ul li a:focus{ background: #264f3e; }
+    #nav ul ul li a:hover{ background: #264f3e; }
+    #nav ul ul li.in     { background: #264f3e; }
+}
+
+
+
+
+
+#banner{
+    background-color: #42846D;
+    background-image: url(../images/banner.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@media (max-width: 500px) {
+    #banner{ background-image: url(../images/banner-smaller.png); }
+}
+
+
+
+
+
+#middle-and-footer .btn-primary {
+    color:#fff;
+    background-color: #ed7328;
+    border-color: #bf5213;
+}
+#middle-and-footer .btn-primary:hover {
+    color:#fff;
+    background-color: #d6580b;
+    border-color: #bf5213;
+}
+
+h1, h2, h3, h4 {
+    color: #3c3c3a !important;
+}
+
+
+.h2 a:link, h2 a:visited, .well.h2 a:link, .well h2 a:visited {
+    color: #3d3c3a !important;
+}
+
+.h2 a:hover, h2 a:hover {
+    color: #00a0e0 !important;
+}
+
+/*Eil added colour to buttons*/
+
+.btn  {
+    background: #3d6654;
+}
+
+.btn a:link, .btn a:visited, a.btn {
+    color: #f2f1e4 !important;
+
+}
+
+.btn a:hover, a.btn:hover, .btn a:focus, a.btn:focus {
+    color: #000 !important;
+
+}
+
+a.btn.btn-default:hover, a.btn.btn-default:active {
+    color: #000 !important;
+}
+
+
+
+/*Box colours*/
+
+p.quote {
+    color: #3c3c3a!important;
+}
+
+p.red {
+    color: red !important;
+    font-family: "Lucida Console", Monaco, monospace!important;
+}
+
+
+.well {
+
+    border: 2px solid #a2a1a1;"
+
+}
+
+
+
+
+

@@ -1,0 +1,8 @@
+originally from shiftingstates
+    [wide] = horizontal menu
+    [narrow] = menu-toggle vertical left menu
+    #right renders before #main
+
+modified to include
+    [narrow] = sticky navbar
+    smooth resizing banner image at top (aspect based on transparent png)

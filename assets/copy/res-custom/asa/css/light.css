@@ -1,0 +1,151 @@
+body{
+    background: #f2f1e4;
+}
+#footer{
+    background: #dad9cc linear-gradient(#dad9cc,#f2f1e4);
+    padding: 20px;
+}
+
+.well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    /*border: 1px solid #e3e3e3;
+    border-radius: 4px;*/
+    /*background: #ffffff linear-gradient(#fefde5,#fff);*/
+    background: #fff;
+    border-radius: 5px;
+    border: 2px solid #e2e1c9;
+    color:#333;
+}
+.well blockquote {
+    border-color: #ddd;
+    border-color: rgba(0, 0, 0, 0.15);
+}
+.well-lg {
+    padding: 24px;
+    border-radius: 6px;
+}
+.well-sm {
+    padding: 9px;
+    border-radius: 3px;
+}
+
+
+
+.red {
+    color: #f33;
+}
+#middle-and-footer a{
+    color: #006a8e;
+}
+#middle-and-footer a:hover{
+    color: #00a0e0;
+}
+
+
+
+
+
+
+
+nav.navbar {
+    background: #458a72;
+    border: none;
+}
+#navbar ul.dropdown-menu {
+    border:none;
+}
+#navbar>ul > li > a{
+    color: #fff;
+}
+#navbar>ul > li > a.active{
+    color: #e6e3ff;
+}
+
+#navbar>ul > li > a:focus,
+#navbar>ul > li > a:hover,
+#navbar>ul > li > a:active {
+    background: #3d7c63;
+    color: #fff;
+}
+#navbar ul ul a {
+    background: #3d7c63;
+    color: #000;
+}
+#navbar ul ul a:focus,
+#navbar ul ul a:hover,
+#navbar ul ul a:active {
+    background: #458a72;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+/* nav  */
+
+/* base colours */
+#nav a { color: #fff; }
+#nav ul{ background: #3d6654; }
+/* THE active link */
+#nav ul li > a.active{          background: #458a72; }
+#nav ul li > a.active:hover{    background: #3a816a; }
+/* contains active link */
+#nav li.active{  background: #325b49; }
+/* focus & hover */
+#nav li a:focus{ background: #325b49; }
+#nav li a:hover{ background: #325b49; }
+/* in horixontal mode, make sub uls darker (looks like tabs: more intuitive) */
+@media (min-width: 1101px){
+    #nav ul ul {  background: #325b49; }
+    #nav ul ul li a:focus{ background: #264f3e; }
+    #nav ul ul li a:hover{ background: #264f3e; }
+}
+
+
+
+
+#header{
+    background: #DCD3BD;
+    padding:10px;
+}
+#header h1{
+    margin: 0;
+    color: #fff;
+}
+
+#banner{
+    background-color: #458a72;
+    background-image: url(../images/banner.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@media (max-width: 500px) {
+    #banner{ background-image: url(../images/banner-smaller.png); }
+}
+
+
+
+
+
+#middle-and-footer .btn-primary {
+    color:#fff;
+    background-color: #ed7328;
+    border-color: #bf5213;
+}
+#middle-and-footer .btn-primary:hover {
+    color:#fff;
+    background-color: #d6580b;
+    border-color: #bf5213;
+}
+
+
+
+
+
+

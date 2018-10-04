@@ -1,0 +1,443 @@
+
+#main {
+    padding-top: 16px;
+}
+
+.small {
+    font-size: .82em;
+}
+
+#logo {
+    padding: 10px 0 0;
+    width: 90px;
+    position: absolute;
+    left: 45px;
+    top: 3px;
+}
+
+#logo img {
+    width: 100%;
+    height: auto;
+}
+
+#logo-text {
+    display: block;
+    width: 100%;
+    left: 6%;
+    top: 7px;
+    position: fixed;
+    font-size: 20px;
+}
+
+#logo-text img {
+    width: 30%;
+}
+
+#logo-text h1, #logo-text h3 {
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1.2em;
+	display:inline;
+    color:#000;
+	background-color: #eee8d9;
+
+}
+
+
+#logo-text h1 span.small {
+    margin-left: .1em;
+    font-size: .79em;
+    font-weight: bold;
+}
+
+#logo-text h1 {
+
+}
+
+#sticky-logo a {
+    color: white; text-shadow: 0.02em 0.02em 0.1em black;
+    font-size: 20px;
+    line-height: 1.3em;
+}
+
+#header {
+
+}
+
+#header-right {
+    font-size: 15px;
+    position: absolute;
+    right: 27%;
+    top: 0;
+    width: 55.5em;
+}
+
+#header-right > a {
+    display: block;
+    position: absolute;
+    background-color: #EEE;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid white;
+    padding: 0;
+    width: 9em;
+    height: auto;
+    top: 1em;
+    right: 0;
+    left: auto;
+}
+
+#header-right > a:first-of-type {
+    width: 9em;
+    top: 1em;
+    left: 0;
+    right: auto;
+}
+
+#header-right > a:nth-of-type(2) {
+    width: 9em;
+    top: 1em;
+    left: 10em;
+    right: auto;
+	background-color: rgb(205, 191, 157);
+}
+
+#header-right > a:nth-of-type(3) {
+    width: 9em;
+    top: 1em;
+    left: 20em;
+    right: auto;
+	background-color: #81a0b5;
+
+	}
+	
+#header-right > a:nth-of-type(4) {
+    width: 11.7em;
+    top: 1em;
+    left: 30em;
+    right: auto;
+	background-color: rgb(205, 191, 157);
+		}
+		
+		
+	#header-right > a:nth-of-type(5) {
+    width: 11em;
+    top: 1em;
+    left: 42.6em;
+    right: auto;
+	
+	 background-color: rgba(255, 255, 255, 0.75);
+		}
+		
+		
+		#header-right > a:nth-of-type(6) {
+    width: 5em;
+    top: 1em;
+    left: 54.5em;
+    right: auto;	
+	background-color: rgba(255, 255, 255, 0.75);
+		}
+		
+		
+		
+				#header-right > a:nth-of-type(7) {
+    width: 13.3em;
+    top: 1em;
+    left: 60.3em;
+    right: auto;	
+	background-color: rgba(255, 255, 255, 0.75);
+		}
+		
+		
+				#header-right > a:nth-of-type(8) {
+    width: 6.7em;
+    top: 1em;
+    left: 74.5em;
+    right: auto;	
+	background-color: rgba(255, 255, 255, 0.75);
+		}
+	
+#header-right > a > img {
+    width: 100%;
+    height: auto;
+}
+
+#choose-lang {
+    float: right;
+    text-align: center;
+    margin-top: -6px
+}
+
+@media (max-width: 1400px) {
+    #header-right {
+        font-size: 10px;
+    }
+}
+@media (max-width: 1300px) {
+    #header-right {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #header-right {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 1100px) {
+    #header-right {
+        font-size: 8px;
+		 right: 23%;
+    }
+}
+
+@media (max-width: 1000px) {
+    #header-right {
+        font-size: 7.5px;
+		 right: 23%;
+    }
+}
+
+@media (max-width:900px) {
+    #logo-text {
+        font-size: 15px;
+    }
+	
+	 #header-right {
+        font-size: 7px;
+		 right: 23%;
+    }
+}
+
+@media (max-width:800px) {
+  
+	
+	 #header-right {
+        font-size: 6px;
+		 right: 23%;
+    }
+}
+
+@media (max-width:700px) {
+    #logo-text {
+        font-size: 15px;
+    }
+	
+	 #header-right {
+        font-size: 5.5px;
+		 right: 25%;
+    }
+}
+
+@media (max-width: 620px) {
+    #logo-text {
+        font-size: 14px;
+    }
+    #header-right {
+         font-size: 5.5px;
+		 right:25%
+    }
+}
+
+@media (max-width: 580px) {
+    #logo-text {
+        font-size: 13px;
+    }
+    #header-right {
+         font-size: 4.5px;
+		 right:25%
+    }
+    .sticky #choose-lang {
+        position: absolute;
+        top:50px;
+        right:5px;
+    }
+}
+@media (max-width: 540px) {
+    #logo-text {
+        font-size: 12px;
+    }
+    #header-right {
+        font-size: 4.5px;
+		right:25%
+    }
+}
+
+@media (max-width: 500px) {
+    #header-right {
+        font-size: 3px;
+        right:25%
+    }
+}
+
+@media (max-width: 450px) {
+    #logo-text {
+        font-size: 10px;
+    }
+	
+	    #header-right {
+        font-size: 3px;
+        right:27%
+    }
+}
+
+@media (max-width: 410px) {
+    #header-right {
+        font-size: 3px;
+        right:27%
+    }
+	
+    #sticky-logo{display:none;}
+    .sticky #choose-lang {
+        position: static;
+    }
+}
+@media (max-width: 380px) {
+    #logo-text {
+        font-size: 9px;
+    }
+	
+	#header-right {
+        font-size: 2.5;
+        right:27%
+    }
+}
+
+@media (max-width: 350px) {
+ 	#header-right {
+        font-size: 3px;
+        right:27%
+    }
+}
+
+@media (max-width: 330px) {
+    #logo-text {
+        font-size: 8px;
+    }
+	
+		#header-right {
+        font-size: 3px;
+        right:27%
+    }
+}
+
+#footer {
+    text-align: center;
+    padding-top: 1em;
+}
+
+#footer-credits img {
+    width: 28px;
+    height: 20px;
+}
+
+#footer #modified-on {
+    display: block;
+    position: absolute;
+    padding: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#footer #html5-badge {
+    vertical-align: bottom;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 10px 0 0 10px;
+    overflow: hidden
+}
+
+#footer #html5-badge img {
+    margin: 0;
+    width: 40px;
+    height: 40px;
+}
+
+
+#choose-lang a {
+    display: inline-block;
+    font-size: 24px;
+    margin: 12px 10px 5px 10px;
+}
+
+#choose-lang a > img {
+    width: 20px;
+}
+
+#choose-lang a, #header-right > a {
+    transition: all .2s linear;
+    transform: scale(1.0);
+}
+
+#header-right > a:hover,
+#header-right > a:focus {
+    transform: scale(1.17);
+}
+#choose-lang a:hover,
+#choose-lang a:focus {
+    transform: scale(1.8);
+}
+
+#choose-lang a.active {
+    border-bottom: 4px solid black;
+    background:transparent;
+}
+
+
+/* fixups */
+
+/* _ns increase width for content */
+.middle {
+    max-width: inherit;
+}
+
+
+
+
+/* _ns menu items - dont wrap text */
+#main-menu > li > ul > li > a{
+    white-space: nowrap;
+}
+
+/* _ns navbar shouldnt be clickabe when hidden*/
+@media (min-width: 1101px){
+    nav #navbar ul li.dropdown{
+        display:none;
+    }
+}
+
+/* _ns nav elements left aligned */
+#nav > ul {
+    /*text-align: left;*/
+}
+
+
+/*Table styling added by EB */
+table.grid {
+    box-shadow: 10px 10px 5px #888888;
+}
+table.grid td {
+    border: 1px solid  #f7d1c2;
+    background-color: #f3f3f4;
+}
+table.grid td.head {
+    background-color: #0f57a5;
+    color: #fff;
+}
+table.grid td.loc {
+    background-color: #f7d1c2;
+    border: 1px solid #fff;
+}
+table.grid td.tues {
+    background-color: #f3f3f4;
+}
+table.grid td.wed {
+    background-color: #dcddde;
+}
+table.grid td.thu{
+    background-color: #f3f3f4;
+}
+table.grid td.fri{
+    background-color: #d1d2d4;
+}

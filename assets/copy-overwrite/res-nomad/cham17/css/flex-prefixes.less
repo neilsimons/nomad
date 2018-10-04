@@ -1,0 +1,31 @@
+.flexbox() {
+  // comment out these lines then rebuild site.css to see how it looks on browsers without flex-box support.
+  display: -webkit-flex; // Chrome
+  display: flex; // Opera 12.1, Firefox 20+
+}
+
+.flex-wrap(@wrap-or-nowrap) {
+  flex-wrap: @wrap-or-nowrap; // Not supported some implementations*/
+}
+
+.flex-direction(@row-or-column) {
+  -webkit-flex-flow: @row-or-column;
+  flex-direction: @row-or-column;
+}
+
+.order(@order) {
+  -ms-flex-order: @order; // IE 10
+  -webkit-order: @order; // Chrome
+  order: @order; // Spec - Opera 12.1, Firefox 20+
+}
+
+.flex(@grow-and-shrink) {
+  -webkit-flex: @grow-and-shrink; // Chrome
+  -ms-flex: @grow-and-shrink; // IE 10
+  flex: @grow-and-shrink
+}
+
+.flex-basis(@size) {
+  -webkit-flex-basis: @size; // Safari 6.1+
+  flex-basis: @size;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit colors="true" bootstrap="phpunit-bootstrap.php">
+    <testsuites>
+        <testsuite name="Package Test Suite">
+            <directory suffix=".php">phpunit</directory>
+        </testsuite>
+    </testsuites>
+    <note>
+        this file configures
+            1) location of unit test classes
+            2) appropriate filename suffix for file to be considered a tests class (rather than the default *Test.php)
+            3) organisation into test suites
+    </note>
+</phpunit>

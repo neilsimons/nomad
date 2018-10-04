@@ -1,0 +1,53 @@
+<?php include dirname($_SERVER['SCRIPT_FILENAME'])."/../../includes/setup.php"; nomad::setTheme('asa');
+
+
+?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <? include nomad::includesDir()."/head.php";?>
+    <title><?=nomad::pagePath()?></title>
+</head>
+<body>
+<? include nomad::includesDir()."/top.php";?>
+<? include nomad::includesDir()."/crumbs.php";?>
+
+<div id="right">
+    <h1>#right</h1>
+    <p>paragraph of text</p>
+    <div class="well">
+        some text inside div.well
+        <h2>h2 text</h2>
+        some text inside div.well
+    </div>
+</div>
+<div id="main">
+    <h1>#main</h1>
+    <p>paragraph of text</p>
+    <p>Neque sodales ut etiam sit amet nisl. Id interdum velit laoreet id. Dignissim sodales ut eu sem integer vitae. Iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui. Lorem mollis aliquam ut porttitor leo a. Et odio pellentesque diam volutpat commodo sed egestas. Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit. Ornare arcu dui vivamus arcu felis bibendum. Arcu non odio euismod lacinia at quis risus sed vulputate. Ultricies mi quis hendrerit dolor magna eget est lorem. Augue eget arcu dictum varius duis at. In cursus turpis massa tincidunt dui ut.</p>
+    <div class="well">
+        some text inside div.well
+        <h2>h2 text</h2>
+        some text inside div.well
+    </div>
+    <button onclick="toggleRight();">toggeRight();</button>
+</div>
+<? include nomad::includesDir()."/foot.php";?>
+<script>
+    function toggleRight(){
+        var right = jQuery('#right');
+        var main = jQuery('#main');
+        if(right.length){
+            main.removeClass('has-right');
+            right.attr('id','right-renamed');
+            right.hide();
+        } else {
+            main.addClass('has-right');
+            var right = jQuery('#right-renamed');
+            right.attr('id', 'right');
+            right.show();
+        }
+    }
+</script>
+</body>
+</html>

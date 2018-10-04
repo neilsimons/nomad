@@ -1,0 +1,295 @@
+
+/* common customisations go here */
+
+.well {
+    min-height: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.well h1,
+.well h2,
+.well h3{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.well p {
+    margin: 0 0 5px;
+}
+
+/*add spacing to items in timetable collapse*/
+
+dt {
+    margin: 5px 0;
+}
+
+
+/*styling exhibitor logos on conf pages*/
+
+img.exhibit {
+    width: 200px;
+    height: auto;
+    margin: 20px;
+    box-shadow: 10px 10px 5px #ccc;
+    -moz-box-shadow: 5px 5px 5px #ccc;
+    -webkit-box-shadow: 5px 5px 5px #ccc;
+    -khtml-box-shadow: 5px 5px 5px #ccc;}
+
+img.exhibit2 {
+    width: 400px;
+    height: auto;
+    margin: 20px;
+    box-shadow: 10px 10px 5px #ccc;
+    -moz-box-shadow: 5px 5px 5px #ccc;
+    -webkit-box-shadow: 5px 5px 5px #ccc;
+    -khtml-box-shadow: 5px 5px 5px #ccc;}
+
+img.exhibit3 {
+    width: 100px;
+    height: auto;
+    margin: 20px;
+    box-shadow: 10px 10px 5px #ccc;
+    -moz-box-shadow: 5px 5px 5px #ccc;
+    -webkit-box-shadow: 5px 5px 5px #ccc;
+    -khtml-box-shadow: 5px 5px 5px #ccc;}
+
+
+
+/*Heading styles*/
+
+
+
+#nav ul, #navbar ul  {
+
+    font-family: 'Nunito', sans-serif;
+}
+
+#nav ul {
+    padding-top:5px;
+
+}
+
+.h2, h2 {
+    font-size: 1.7em;
+    font-weight: normal;
+    font-family: 'Nunito', sans-serif;
+    margin: 5px 0 10px 0;
+    font-weight: bold;
+
+}
+
+.h3, h3 {
+    margin: 5px 0 10px 0;
+    font-weight:bold;
+    font-family: 'Nunito', sans-serif!important;
+
+}
+
+h1 {
+
+    margin-bottom: 30px;
+    font-size: 3em;
+    font-family: 'Nunito', sans-serif!important;
+}
+
+.h2 a:link, h2 a:visited, .h3 a:link, h3 a:visited {
+    color: #3d3c3a;
+
+}
+
+/*Body styles*/
+
+#main p, #main ul li, .well p, #main ol li {
+
+    font-family: 'Lora', serif;
+    font-size: 1.2em;
+    line-height: 1.7em;
+    margin: 0 0 1.5em 0;
+}
+
+#main li {
+    margin: 10px 0 10px 0;
+}
+
+#main ul li ul li {
+    font-size: 1em;
+
+}
+
+/*menu styles*/
+
+#nav ul, #navbar ul  {
+    font-size: 1.2em;
+}
+
+#nav > ul > li > ul > li {
+    font-size: 0.8em;
+}
+
+img .right {
+    float:right;
+
+}
+
+img.left {
+    float:left;
+    padding-right:5px;
+
+}
+
+p.quote {
+    font-size:1.5em!important;
+    font-family: 'Nunito', sans-serif!important;
+
+}
+
+
+/*Footnotes text*/
+
+.ftn_txt {
+    font-size: 0.8em;
+}
+/*Buttons */
+
+.btn a:link {
+
+    font-family: 'Nunito', sans-serif;
+}
+
+.btn {
+    margin: 3px;
+}
+
+.fat {
+    font-family: 'Rammetto One', cursive!important;
+}
+
+
+/*Eli added for asa18 table*/
+
+
+
+table .asa18_tbl td {
+    color:white;
+    padding: 1em;
+    border: 1px solid white;
+
+}
+
+table .asa18_tbl_head td {
+    color:#434343;
+
+}
+
+
+
+
+
+
+/*Eli added for responsive image text alignement*/
+
+.responsive_element {
+    width: 100%;
+    display: table;
+    background-color: #f4f4f4;
+    margin: 15px 0px;
+    padding: 15px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid #e2e1c9;
+    font-family: 'Nunito', sans-serif;
+    color: #3d3c3a;
+}
+
+
+
+#main.responsive p {
+    font-family: 'Nunito', sans-serif;
+
+}
+
+#main p.responsive {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    font-family: 'Nunito', sans-serif;
+    color: #3d3c3a;
+}
+
+.responsive_txtframe {
+    width: 100%;
+    background-color: #f4f4f4;
+    margin: 15px 0px;
+    padding: 15px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid #e2e1c9;
+    font-family: 'Nunito', sans-serif;
+    color: #3d3c3a;
+
+}
+
+
+
+img.responsive, iframe.responsive {
+    display: table-cell;
+    width: 25%;
+    height: auto;
+    float: left;
+    margin-right:10px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.30);
+}
+
+#main p.responsive_txt {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    font-family: 'Nunito', sans-serif;
+    color: #3d3c3a;
+    width: 75%;
+    padding-left: 10px;
+
+
+}
+
+p.responsive_head  {
+    display: table-cell;
+    width: 35%;
+    height: auto;
+    vertical-align: middle;
+    padding-right: 10px;
+    border-right: 2px solid #e2e1c9;
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 479px){
+    img.responsive {
+        width: 100%;
+        margin: 0px auto;
+        display: block;
+        height: auto;
+        margin-bottom:10px;
+
+    }
+
+    p.responsive_head  {
+        width: 100%;
+        margin: 0px auto;
+        display: block;
+        height: auto;
+        text-align:center;
+
+    }
+}
+
+

@@ -1,0 +1,52 @@
+
+/* _ns increase width for content */
+.middle {
+    max-width: inherit;
+}
+
+
+
+
+/* _ns horizontal menu item dropdowns - dont wrap text */
+#main-menu > li > ul > li > a{
+    white-space: nowrap;
+}
+
+
+
+/* _ns nav elements left aligned */
+#nav > ul {
+    /*text-align: left;*/
+}
+
+
+
+
+/*Table styling added by EB */
+table.grid {
+    box-shadow: 10px 10px 5px #888888;
+}
+table.grid td {
+    border: 1px solid  #f7d1c2;
+    background-color: #f3f3f4;
+}
+table.grid td.head {
+    background-color: #0f57a5;
+    color: #fff;
+}
+table.grid td.loc {
+    background-color: #f7d1c2;
+    border: 1px solid #fff;
+}
+table.grid td.tues {
+    background-color: #f3f3f4;
+}
+table.grid td.wed {
+    background-color: #dcddde;
+}
+table.grid td.thu{
+    background-color: #f3f3f4;
+}
+table.grid td.fri{
+    background-color: #d1d2d4;
+}

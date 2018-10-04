@@ -1,0 +1,15 @@
+{
+  "name": "nomad-implementation",
+  "description" : "a nomad site",
+  "repositories": [
+    {"packagist.org": false},
+    {"type": "path", "url": "/app/libdev/nomadit/nomad", "options":{"symlink": false}, "__desc": "dont symlink (forces copy)"}
+  ],
+  "require": {
+    "nomadit/nomad" : "*"
+  },
+  "scripts": { "_": "always runs hooks every time composer install|update is run (to copy-in/symlink assoc files)",
+    "post-install-cmd": "nomad::composer_post_install",
+    "post-update-cmd": "nomad::composer_post_update"
+  }
+}

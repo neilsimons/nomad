@@ -1,0 +1,196 @@
+#middle-and-footer {
+    background-color: #fff;
+}
+#footer {
+    color:#000;
+   background-color: #81a0b5;
+}
+#footer a {
+    color:#fff;
+}
+
+.well {
+    min-height: 20px;
+    margin-bottom: 20px;
+	background: #dcd3bd;
+
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.well blockquote {
+    border-color: #ddd;
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+.well-lg {
+    padding: 24px;
+    border-radius: 6px;
+}
+
+.well-sm {
+    padding: 9px;
+    border-radius: 3px;
+}
+
+#right {
+    margin-top: 14px;
+}
+
+#logo-text h1 a,
+#logo-text h2 a,
+#logo-text h3 {
+    color: #000;
+}
+
+#spacer {
+    background: #c19f46;
+}
+
+nav.navbar {
+     background: #c19f46;
+
+}
+
+nav.navbar.sticky {
+      background: #c19f46;
+
+}
+
+#navbar ul > li > a {
+    color: #fff;
+}
+
+#navbar ul > li > a:focus,
+#navbar ul > li > a:hover,
+#navbar ul > li > a:active {
+    color: #fff;
+    background: #ca524a;
+}
+
+#navbar ul ul a {
+    color: #ddd;
+    background: #98b6d8;
+}
+
+#navbar ul ul a:focus,
+#navbar ul ul a:hover,
+#navbar ul ul a:active {
+    color: #fff;
+    background: rgb(181, 33, 23);;
+}
+
+#navbar ul.dropdown-menu {
+    border-color: #98b6d8;
+}
+
+.icon-twitter.black-bird {
+    background-image: url(../images/icons/twitter_bird.png);
+}
+
+#navbar a:focus .icon-twitter.black-bird,
+#navbar a:hover .icon-twitter.black-bird,
+#navbar a:active .icon-twitter.black-bird {
+    background-image: url(../images/icons/white_twitter_bird.png);
+}
+
+#search-panel > a {
+    color: #ddd;
+}
+
+#search-panel > a:focus,
+#search-panel > a:hover,
+#search-panel > a:active {
+    color: #fff;
+}
+
+#nav li.active > a {
+    text-decoration: underline;
+}
+
+#nav li.active.in > a {
+    text-decoration: none;
+}
+
+#nav li.active > a.active {
+    text-decoration: none;
+    color: #e12a26;
+}
+
+#nav li.in {
+    background: #e4e4e4;
+}
+
+#nav li.in li.in {
+    background: #d3d3d3;
+}
+
+#nav ul.hasOneIn > li > a {
+    color: #99a;
+}
+
+#nav span.expandButton a:hover,
+#nav a:hover,
+#nav a:active,
+#nav a:focus {
+    color: #e12a26;
+	background: #f5f5f5;
+}
+
+#nav ul.hasOneIn > li.in > a,
+#nav ul.collapsing > li.in > a {
+    color: #fff;
+    background: rgb(181, 33, 23);
+}
+
+
+/*Added by EB 02/09/2016*/
+ul#main-menu.nav.nav-sidebar {
+font-weight:bold;
+}
+
+
+#main a:hover,#main  a:focus,#right a:hover,#right  a:focus {
+    box-shadow: 0 4px 2px -2px rgb(240, 157, 25);
+}
+#footer a img, .btn, #navbar a {
+    transition: all .2s ease-out;
+    transform: scale(1);
+}
+.btn:hover,.btn:focus {
+    transform: scale(1.12);
+}
+#footer a:hover img, #footer a:focus img {
+    transform: scale(1.26);
+}
+
+ #main-menu {
+    padding: 0;
+    margin-top: 14px;
+}
+
+
+
+.panel-heading {
+    background: rgb(181, 33, 23);
+/* Commented out by Eli    background-image: -webkit-gradient(linear, right, left, from(rgb(255,240,120)), to(rgb(255,200,50)));
+    background-image: -webkit-linear-gradient(right, rgb(255,240,120), rgb(255,200,50));
+    background-image: -moz-linear-gradient(right, rgb(255,240,120), rgb(255,200,50));
+    background-image: -o-linear-gradient(right, rgb(255,240,120), rgb(255,200,50));
+    background-image: linear-gradient(to left, rgb(255,240,150), rgb(255,200,80));*/
+}
+
+hr { border-color: #C8F}
+
+.btn-primary {
+    background-color: #81a0b5;
+    border-color: #000644;
+}
+.btn-default {
+    background-color: rgba(200, 200, 200, 0.6);
+}
+.btn-primary:hover,.btn-primary:focus {
+    color: #ffffff;
+    background-color: #db0322;
+    border-color: #304;
+}

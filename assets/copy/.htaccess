@@ -1,0 +1,85 @@
+# always use https
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=302]
+
+# dreamhost - DH by default is setup to rely on /missing.html as errordoc, so overrisde with a message here
+ErrorDocument 404 "<h1>404 Not Found</h1>"
+
+
+# if using mod.php, allow use of .phtml
+<IfModule  mod_php5.c>
+    AddType text/html .phtml
+    <FilesMatch \.(php|phtml)$>
+        SetHandler application/x-httpd-php
+    </FilesMatch>
+</IfModule>
+# fastcgi setup (eg dreamhost) should work without further configuration
+
+# add index.phtml as directoryIndex
+DirectoryIndex index.html index.php index.phtml
+
+
+
+
+# all rewrite rules have condition to allow existing files to be served (& directories if config permits)
+# NC = case insensitive, L = last rule
+RewriteEngine on
+
+
+# ==== rule: determine and set SITEPATH var ====
+# following rewrite rules require SITEPATH var in case site is located in subdir/s
+# we can derive and set automatically! - slight modification to solution posted here: https://serverfault.com/questions/278651/relative-substitution-in-mod-rewrite-rewriterule
+# simply put, subtracts  'a/path' from '/sub/dirs/a/path' leaving '/sub/dirs' or '' if none
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond $1@%{REQUEST_URI} ([^@]*)@(.*?)\/\1$
+RewriteRule ^(.+)$ - [E=SITEPATH:%2]
+# if above ever fails, can manually set here instead
+#RewriteRule .* - [E=SITEPATH:/nomad]
+
+# ==== rule: dev/testing ==== - redirect everything to specific file - can see results in querystring
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^(.+)$ /rewrite-testing.php?\pattern=$1@%{REQUEST_URI}&$1=$1&DOCUMENT_ROOT=%{DOCUMENT_ROOT}&REQUEST_FILENAME=%{REQUEST_FILENAME}&SITEPATH=%{ENV:SITEPATH}&\%2=%2 [NC,L,R=302]
+
+
+# because of categorised content, theres a good likelihood of having the following setup
+# [real resource]       [alias]         [redirected to]
+# /index.phpml          /               -
+# /about.phtml          /about          /about/      <- apache directoryslash setting appends / becaouse '/about' is a directory
+# /about/past.phtml     /about/past     -
+# /history.phtml        /history        -
+# so rewrite rules need to account for the extra slash in such situations
+
+
+# ==== rule: allow use of no file extention ====
+# rewrite /path  to /path.phtml   if /path.phtml exists
+RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d # dont check for directories here as its possible a similarly named dir exists, eg "parent.html" may well have "parent/child.html"
+RewriteCond %{DOCUMENT_ROOT}%{ENV:SITEPATH}/$1.phtml -f
+RewriteRule ^(.+)$ $1.phtml [NC,L]
+
+# ==== rule: above part 2 ==== another version to cope with trailing / added by DirectorySlash if /path is a directory, or if user inputs it in address bar
+# rewrite /path/ to /path.phtml  if /path.pthml exists
+RewriteCond %{DOCUMENT_ROOT}%{ENV:SITEPATH}/$1.phtml -f
+RewriteRule ^(.+)/$ $1.phtml [NC,L]
+
+
+
+# ==== rule: allow use of .html (for compatibility with previous site/s) ====
+# rewrite /path.html to /path.phtml   if /path.phtml exists
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}%{ENV:SITEPATH}/$1.phtml -f
+RewriteRule ^(.*)\.html$ $1.phtml [NC,L]
+# could redirect to /path instead of above rewrite..
+#RewriteRule ^(.*)\.html$ %{ENV:SITEPATH}/$1 [NC,L,R=302]
+
+
+# ==== rule: allow use of .shtml (for compatibility with previous site/s) ====
+# rewrite /path.shtml to /path.phtml   if /path.phtml exists
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}%{ENV:SITEPATH}/$1.phtml -f
+RewriteRule ^(.*)\.shtml$ $1.phtml [NC,L]
+# could redirect to /path instead of above rewrite..
+#RewriteRule ^(.*)\.shtml$ %{ENV:SITEPATH}/$1 [NC,L,R=302]
+

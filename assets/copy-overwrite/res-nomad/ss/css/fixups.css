@@ -1,0 +1,72 @@
+
+/* _ns increase width for content */
+.middle {
+    max-width: inherit;
+}
+
+
+
+
+/* _ns horizontal menu item dropdowns - dont wrap text */
+#main-menu > li > ul > li > a{
+    white-space: nowrap;
+}
+
+/* _ns navbar shouldnt be clickabe when hidden*/
+@media (min-width: 1101px){
+    nav #navbar ul li.dropdown{
+        display:none;
+    }
+}
+
+/* _ns nav elements left aligned */
+#nav > ul {
+    /*text-align: left;*/
+}
+
+/* _ns crumbtrail uses dirnames if page not found in menuarray - this make sure the dirnames are capitalised */
+/* fixed in less.css
+#crumbs .capitalize{
+    text-transform: capitalize;
+    opacity: 1;
+}
+*/
+
+/* _ns when #right moves below(@700px), allow# main to be full width  */
+/* fixed less.css
+@media (max-width: 700px) {
+    #main.has-right {
+        width: 98%;
+    }
+}
+*/
+
+
+/*Table styling added by EB */
+table.grid {
+    box-shadow: 10px 10px 5px #888888;
+}
+table.grid td {
+    border: 1px solid  #f7d1c2;
+    background-color: #f3f3f4;
+}
+table.grid td.head {
+    background-color: #0f57a5;
+    color: #fff;
+}
+table.grid td.loc {
+    background-color: #f7d1c2;
+    border: 1px solid #fff;
+}
+table.grid td.tues {
+    background-color: #f3f3f4;
+}
+table.grid td.wed {
+    background-color: #dcddde;
+}
+table.grid td.thu{
+    background-color: #f3f3f4;
+}
+table.grid td.fri{
+    background-color: #d1d2d4;
+}

@@ -1,0 +1,133 @@
+/* example light (default) theme */
+
+.red {
+    color: #f33;
+}
+#middle-and-footer a{
+    color: #006a8e;
+}
+#middle-and-footer a:hover{
+    color: #00a0e0;
+}
+nav.navbar {
+    background: #ED7328;
+    border: none;
+    /*box-shadow: 0 0 20px 3px #d86c25 inset;*/
+}
+#navbar ul.dropdown-menu {
+    border:none;
+
+}
+#navbar>ul > li > a{
+    color:#fff;
+}
+#navbar>ul > li > a.active{
+    color: #e6e3ff;
+}
+
+#navbar>ul > li > a:focus,
+#navbar>ul > li > a:hover,
+#navbar>ul > li > a:active {
+    background: #d6580b;
+    color: #fff;
+}
+#navbar ul ul a {
+    background: #d6580b;
+    color: #000;
+}
+#navbar ul ul a:focus,
+#navbar ul ul a:hover,
+#navbar ul ul a:active {
+    background: #ED7328;
+    color: #000;
+}
+#nav{
+    background:#536F61;
+}
+#nav a{
+    color: #fff;
+}
+#nav a.active{
+    color:#fff;
+    /*background:#354e3f;*/
+}
+#nav ul ul li {
+    /*border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;*/
+}
+#nav li.in {
+    /*background:#354e3f;*/
+}
+#nav > ul > li > ul {
+    background:#536F61;
+}
+#nav .nav > li.active {
+    background-color: #445f50;
+}
+#nav .nav > li > a.active,
+#nav .nav > li > a:hover,
+#nav .nav > li > a:active,
+#nav .nav > li > a:focus{
+    background: #354e3f;
+}
+
+#header{
+    background: #DCD3BD;
+    padding:10px;
+}
+#header h1{
+    margin: 0;
+    color: #fff;
+}
+
+
+#footer{
+    /*background:#ddd;*/
+    background: #f5f5f5 linear-gradient(#f0f0f0,#fff);
+    padding: 20px;
+}
+
+
+#middle-and-footer .btn-primary {
+    color:#fff;
+    background-color: #ed7328;
+    border-color: #bf5213;
+}
+#middle-and-footer .btn-primary:hover {
+    color:#fff;
+    background-color: #d6580b;
+    border-color: #bf5213;
+}
+
+
+
+.___well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    /*border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    background: #f5f5f5 linear-gradient(#f0f0f0,#fff);*/
+    border-radius: 3px;
+    border: 2px solid black;
+   
+    color:#333;
+}
+
+.well blockquote {
+    border-color: #ddd;
+    border-color: rgba(0, 0, 0, 0.15);
+}
+.well-lg {
+    padding: 24px;
+    border-radius: 6px;
+}
+.well-sm {
+    padding: 9px;
+    border-radius: 3px;
+}
+
+
+
+

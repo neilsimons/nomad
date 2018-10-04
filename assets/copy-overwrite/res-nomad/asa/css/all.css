@@ -1,0 +1,455 @@
+body {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+#nav>ul>li>ul{
+    min-width: 100%;
+    /*width:200px;*/
+}
+
+
+div.gsc-adBlock {
+    display: none;
+}
+
+#main, #right {
+    /*padding-top: 16px;*/
+}
+
+.small {
+    font-size: .82em;
+}
+
+#banner {
+    overflow: hidden;
+}
+
+#logo-text h1 a.logo img,
+#banner a.logo {
+    display: block;
+    position: relative;
+    right: -16.7%;
+    -webkit-animation-name: slideFromRight;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 2.6s;
+    animation-name: slideFromRight;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 2.6s;
+	
+}
+
+#logo-text .slash {
+    font-size: 1.4em;
+    position: relative;
+    top: .1em;
+    margin-left: .1em;
+    display: inline-block;
+    font-weight: normal;
+}
+
+@keyframes slideFromRight {
+    0% {
+        right: 100%;
+    }
+    100% {
+        right: -16.7%;
+    }
+}
+
+#banner {
+    /*margin: 1em 0;*/
+    position: relative;
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+}
+
+#banner-credit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 3px 7px;
+    color: #222;
+    font-size: .77em;
+    background: rgba(240, 240, 200, 0.7);
+}
+
+@media (max-width: 500px) {
+    #banner-credit {
+        font-size: .70em;
+    }
+}
+
+@media (max-width: 400px) {
+    #banner-credit {
+        font-size: .63em;
+    }
+}
+
+#banner > a {
+    display: block;
+    width: 100%;
+}
+
+
+#banner-overlay{
+    position: absolute;
+    top: 0;
+    width:100%;
+}
+
+
+#logo-text {
+    text-align: center;
+}
+
+#logo-text h1 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    line-height: 1.3em;
+}
+
+
+@media (max-width: 1100px) {
+    #logo-text h1 a.logo img {
+        width: 180px;
+        height: auto;
+    }
+
+    #logo-text h1.no-logo {
+        margin: 1em 0;
+    }
+
+    /* _ns no resize
+    #logo-text h1 {
+        margin: 0 0 1em;
+    }*/
+
+    #logo-text h1.no-logo {
+        margin: 1em 0;
+    }
+
+    #logo-text h1 a.logo {
+        display: block;
+        position: static;
+        /*background: url(../images/shiftingstates_small_slice.jpg);
+        background-repeat: repeat-x;
+        background-size: auto 100%;*/
+        margin: 0 auto;
+    }
+
+    #logo-text h1 a.logo span.no-wrap {
+        padding: 0;
+        display: inline-block;
+    }
+}
+
+/* _ns removed changes to logo-text above 1101 px wide */
+
+@media (max-width: 800px) {
+    #logo-text h1 > span.red {
+        display: block;
+    }
+}
+
+#footer {
+    text-align: center;
+    padding-top: 1em;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+#footer #site-by img {
+    width: 26px;
+    height: 26px;
+}
+
+#footer #modified-on {
+    display: block;
+    position: absolute;
+    padding: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#footer #site-by {
+    display: block;
+    position: absolute;
+    padding: 0;
+    left: 8px;
+    bottom: 8px;
+
+}
+
+#footer #html5-badge {
+    vertical-align: middle;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 10px 0 0 10px;
+    overflow: hidden
+}
+
+#footer #html5-badge img {
+    margin: 0;
+    width: 28px;
+    height: 28px;
+}
+
+#footer a.btn {
+    white-space: normal;
+    display: block
+}
+
+.well h3, .well .h3 {
+    margin-top: 0;
+}
+
+#footer-credits .row {
+    margin: 10px auto 50px;
+}
+
+#footer-credits .row > div {
+    vertical-align: top;
+    width: 270px;
+    display: inline-block;
+    margin: 10px 10px;
+    padding: 10px;
+}
+
+#footer-credits .row > div > a {
+    height: 130px;
+}
+
+@media (max-width: 900px) {
+    #footer-credits .row > div {
+        display: block;
+        margin: 10px auto;
+
+    }
+}
+
+h4 *.pull-right {
+    margin-left: 0.5em;
+}
+
+h3 *.pull-right {
+    margin-left: 0.5em;
+}
+
+h2 *.pull-right {
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.keynote-wells .well {
+    min-height: 150px;
+}
+
+.keynote-wells .well a[aria-haspopup=true] {
+    margin-bottom: 5px;
+    display: inline-block;
+    background: #eee;
+    border: 1px solid #ddd;
+    padding: 5px 12px;
+    color: #500;
+}
+
+.keynote-wells .well a[aria-haspopup=true]:hover,.keynote-wells .well a[aria-haspopup=true]:focus {
+    color:#900;
+}
+
+
+@media (min-width: 893px) {
+    .high5.row .well {
+        min-height: 13em;
+    }
+}
+
+/* _ns increase width for content */
+.middle {
+   max-width: inherit;
+}
+
+/* _ns #menu-toggle (burger) shouldnt be clickabe when hidden */
+@media (min-width: 1101px){
+    #navbar #menu-toggle{ display: none;  }
+}
+
+/* _ns menu items - dont wrap text */
+#main-menu > li > ul > li > a{
+    white-space: nowrap;
+}
+/* _ns nav elements left aligned */
+#nav > ul {
+    /*text-align: left;*/
+}
+/* _ns top */
+#header{
+    text-align: center;
+}
+#header h1{
+    font-family: Open Sans,Helvetica,Arial,sans-serif;
+}
+
+@media (max-width: 1000px) { /* reduce sizes of logo and headings */
+    #header h1{ font-size: 1.5em;}
+    #header h2{ font-size: 0.5em;}
+}
+
+
+/* try image sizing */
+#header-right{
+    /*position: absolute;
+    right:0px;*/
+    float:right;
+	margin: 1em 1em 0 0;
+}
+#header-right > a {
+    display: inline-block;
+    /*border: 1px solid white;*/
+    background: #333;
+    padding: 0;
+}
+#header-right > a > img {
+    height: 7em;
+    width: auto;
+}
+@media (max-width: 1800px) {   #header-right {        font-size: 8px; }}
+@media (max-width: 1600px) {   #header-right {        font-size: 8px; }}
+@media (max-width: 1400px) {   #header-right {        font-size: 8px;    }}
+@media (max-width: 1300px) {   #header-right {        font-size: 8px;    }}
+@media (max-width: 1200px) {   #header-right {        font-size: 8px;    }}
+@media (max-width: 1000px) {   #header-right {        font-size: 7.5px;    }}
+@media (max-width: 900px) {    #header-right {        font-size: 7px;    }}
+@media (max-width: 800px) {    #header-right {        font-size: 6px;    }}
+@media (max-width: 700px) {    #header-right {        font-size: 5.5px;    }}
+@media (max-width: 620px) {    #header-right {        font-size: 5.5px;    }}
+@media (max-width: 580px) {    #header-right {        font-size: 4.5px;    }}
+@media (max-width: 540px) {    #header-right {        font-size: 4px;    }}
+@media (max-width: 450px) {    #header-right {        font-size: 3.5px;   }}
+@media (max-width: 380px) {    #header-right {        font-size: 3px;   }}
+
+
+
+
+/* https://github.com/wimagguc/jquery-eu-cookie-law-popup */
+.eupopup-container {
+    background-color: rgba(25, 25, 25, 0.9);
+    color: #efefef;
+    padding: 5px 20px;
+    font-size: 12px;
+    line-height: 1.2em;
+    text-align: center;
+    display: none;
+    z-index: 9999999;
+}
+
+.eupopup-container-top,
+.eupopup-container-fixedtop {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+}
+.eupopup-container-fixedtop {
+    position: fixed;
+}
+
+.eupopup-container-bottom {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+}
+.eupopup-container-bottomleft {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 300px;
+}
+.eupopup-container-bottomright {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 300px;
+}
+.eupopup-closebutton {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 1;
+    color: #a2a2a2;
+    filter: alpha(opacity=20);
+    position: absolute;
+    font-family: helvetica, arial, verdana, sans-serif;
+    top: 0; right: 0;
+    padding: 5px 10px;
+}
+.eupopup-closebutton:hover,
+.eupopup-closebutton:active {
+    color: #fff;
+    text-decoration: none;
+}
+.eupopup-head {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 7px;
+    color: #fff;
+}
+.eupopup-body {
+    color: #a2a2a2;
+}
+.eupopup-buttons {
+    padding: 7px 0 5px 0;
+}
+.eupopup-button_1 {
+    color: #f6a21d;
+    font-weight: bold;
+    font-size: 14px;
+}
+.eupopup-button_2 {
+    color: #f6a21d;
+    font-weight: normal;
+    font-size: 12px;
+}
+.eupopup-button {
+    margin: 0 10px;
+}
+.eupopup-button:hover,
+.eupopup-button:focus {
+    text-decoration: underline;
+    color: #f6a21d;
+}
+body .eupopup-color-inverse {
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+body .eupopup-color-inverse .eupopup-head {
+    color: #000;
+}
+body .eupopup-style-compact {
+    text-align: left;
+    padding: 8px 30px 7px 20px;
+    line-height: 15px;
+}
+body .eupopup-style-compact .eupopup-head,
+body .eupopup-style-compact .eupopup-body,
+body .eupopup-style-compact .eupopup-buttons {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+body .eupopup-style-compact .eupopup-button {
+    margin: 0 5px;
+}
+
+
+
+/* _ns dev */
+/**{border: 1px solid #aad5ff}*/

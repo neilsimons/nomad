@@ -1,0 +1,5 @@
+this folder is overwritten whenever the nomad template functionality is updated
+any modifications or additional files will be lost when this happens!
+
+for cutomisations from the default theme here, use the /res-custom/* folder designed for that purpose!
+

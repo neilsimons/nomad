@@ -1,0 +1,113 @@
+/* example dark theme */
+
+body {
+  background: #111;
+  color: #ddd;
+}
+#banner-credit {
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+  color: #FF0;
+}
+#middle-and-footer {
+  background-color: #111;
+}
+nav.navbar {
+  background: #000;
+  background: rgba(0, 0, 0, 0.5);
+  Xbackground: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+  border: none;
+}
+a.active {
+  color: #999;
+}
+h1 span{
+    color: #FF4;
+}
+.red{
+    color: #F55;
+}
+
+#main {
+  background: #111;
+}
+#nav > ul,
+div.well {
+  background: #222;
+  background: linear-gradient(#1d1d1d, #323232);
+}
+div.well {
+  border: 2px solid #333;
+}
+#nav > ul {
+  border: 2px solid #333;
+  border-top: none;
+}
+#main {
+  padding: .5em;
+}
+a {
+  color: #ff0;
+}
+a:hover,
+a:active {
+  color: #ffa;
+  text-decoration: none;
+}
+a:focus {
+  color: #fa9;
+}
+#navbar > ul > li > a:hover,
+#navbar > ul > li > a:focus {
+    background: #222;
+}
+#nav li.in {
+  background: #300;
+}
+#nav ul ul a {
+  border: none;
+  border-top: 2px solid #444;
+}
+#nav a:hover,
+#nav a:active {
+  background-color: #000;
+}
+#nav>ul>li>ul {
+    background:#333;
+}
+#nav ul.hasOneIn > li.in > a,
+#nav ul.collapsing > li.in > a {
+  color: #F55;
+}
+#nav a:active {
+  color: #000000;
+}
+#nav span.expandButton a {
+  background: #222;
+  border: 2px solid #888;
+}
+#nav span.expandButton a:hover,
+#nav span.expandButton a:active {
+  background-color: #000;
+  border-color: #ff0;
+  color: #fff;
+}
+#nav span.expandButton a:focus {
+  background-color: #111;
+}
+#nav a:focus {
+  background: #000;
+  border-bottom: 2px solid #C00;
+}
+.icon-twitter.black-bird {
+  background-image: url(../images/icons/white_twitter_bird.png);
+}
+.panel-heading a:link,.panel-heading a:active{color:#BB0;}
+.panel-heading a:focus,.panel-heading a:hover{color:#DD0}
+@media (max-width:1100px) {
+    #logo-text h1 a.logo img {
+        display: none;
+    }
+}
+
