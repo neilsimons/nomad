@@ -25,9 +25,8 @@ trait nomad_composerFunctions
         #echo "installed $name '$dir' $projectdir\n";
         if($name==='nomadit/nomad'){
             // nomad install - prepare various required dirs for theme install
-            // includes already exists - thats the composer projectdir
-            mkdir("$siterootdir/includes/themes", true);
-            mkdir("$siterootdir/assets", true);
+            #self::mkdir("$siterootdir/includes"); // includes already exists - thats the composer projectdir
+            self::mkdir("$siterootdir/assets");
             // copy in various files.. todo
         }
         if(strpos($name,'nomadit/nomad-theme-')===0){
@@ -104,7 +103,7 @@ trait nomad_composerFunctions
     }
     */
 
-    protected static function mkdirp($dir)
+    protected static function mkdir($dir)
     {
         if(!file_exists($dir)){
             $r = (string) mkdir($dir, true); // mkdir -p
