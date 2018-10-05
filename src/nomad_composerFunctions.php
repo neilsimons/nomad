@@ -104,6 +104,14 @@ trait nomad_composerFunctions
     }
     */
 
+    protected static function mkdirp($dir)
+    {
+        if(!file_exists($dir)){
+            $r = (string) mkdir($dir, true); // mkdir -p
+            echo "[$r] mkdir $dir\n";
+        }
+    }
+
     protected static function symlink($target, $link)
     {
         // check existing link is correct
