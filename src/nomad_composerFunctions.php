@@ -25,8 +25,10 @@ trait nomad_composerFunctions
         #echo "installed $name '$dir' $projectdir\n";
         if($name==='nomadit/nomad'){
             // nomad install - prepare various required dirs for theme install
-            #mkdir("$siterootdir/includes/themes");
-            mkdir("$siterootdir/assets");
+            // includes already exists - thats the composer projectdir
+            mkdir("$siterootdir/includes/themes", true);
+            mkdir("$siterootdir/assets", true);
+            // copy in various files.. todo
         }
         if(strpos($name,'nomadit/nomad-theme-')===0){
             // theme install - copy files into place
@@ -125,7 +127,7 @@ trait nomad_composerFunctions
         if (!$overwrite) $flags .= "-n "; // -n no-clobber (don't overwrite existing)
         $cmd = "cp $flags $srcDir/. $dstDir";  // use . not * to glob onto all files
         exec($cmd, $output, $r);
-        echo "$cmd $r\n";
+        echo "$r $cmd\n";
     }
 
     protected static function getPathsInDir($dir)
